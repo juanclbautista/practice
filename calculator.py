@@ -19,6 +19,8 @@ while True:
         try:
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
+        
+        #This throws the error whenever you don't give a valid input for the number, so basically anything but a number in the operation.
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
@@ -31,7 +33,8 @@ while True:
             print(num1, "*", num2, "=", multiply(num1, num2))
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
-            
+    
+    #This throws the error whenever you don't select a valid operation for the calculator.
     if choice not in ('1', '2', '3', '4'):
         print("Invalid choice, please try again.")
         continue
