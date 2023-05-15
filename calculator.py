@@ -31,6 +31,7 @@ while True:
             print(num1, "*", num2, "=", multiply(num1, num2))
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+            
     if choice not in ('1', '2', '3', '4'):
         print("Invalid choice, please try again.")
         continue
